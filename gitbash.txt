@@ -1,0 +1,76 @@
+mohsinali@it2 MINGW64 ~ (master)
+$ cd desktop
+
+mohsinali@it2 MINGW64 ~/desktop (master)
+$ cd firstgithub
+
+mohsinali@it2 MINGW64 ~/desktop/firstgithub (master)
+$ git init
+Initialized empty Git repository in C:/Users/mohsinali/Desktop/firstgithub/.git/
+
+mohsinali@it2 MINGW64 ~/desktop/firstgithub (master)
+$ git add .
+
+mohsinali@it2 MINGW64 ~/desktop/firstgithub (master)
+$ git commit -m "first commit"
+[master (root-commit) bcd7653] first commit
+ 1 file changed, 11 insertions(+)
+ create mode 100644 gitcommands.txt
+
+mohsinali@it2 MINGW64 ~/desktop/firstgithub (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+
+mohsinali@it2 MINGW64 ~/desktop/firstgithub (master)
+$ git remote add origin https://github.com/mohsintechie/gitrepo.git
+
+mohsinali@it2 MINGW64 ~/desktop/firstgithub (master)
+$ git branch -M main
+
+mohsinali@it2 MINGW64 ~/desktop/firstgithub (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 304 bytes | 152.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mohsintechie/gitrepo.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+mohsinali@it2 MINGW64 ~/desktop/firstgithub (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   gitcommands.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+mohsinali@it2 MINGW64 ~/desktop/firstgithub (main)
+$ git add .
+
+mohsinali@it2 MINGW64 ~/desktop/firstgithub (main)
+$ git commit -m "second commit"
+[main 6016826] second commit
+ 1 file changed, 5 insertions(+)
+
+mohsinali@it2 MINGW64 ~/desktop/firstgithub (main)
+$ git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 388 bytes | 388.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mohsintechie/gitrepo.git
+   bcd7653..6016826  main -> main
+branch 'main' set up to track 'origin/main'.
+
+mohsinali@it2 MINGW64 ~/desktop/firstgithub (main)
+$
